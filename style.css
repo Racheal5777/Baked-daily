@@ -34,6 +34,14 @@ header{
     align-items: center;
     font-family: playfair display;
 }
+.genLayout{
+    max-width: 1250px;
+    margin: auto;
+}
+.stay a i{
+    padding: 8px;
+
+}
 
 .nav-center{
     display: flex;
@@ -47,6 +55,7 @@ header{
 
 .head{
     background-color: rgb(244 224 198);
+    width: ;
     height: 110vh;
 
 }
