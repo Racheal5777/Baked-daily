@@ -529,21 +529,31 @@ header{
         
     }
     .bannerTitle{
-        text-align: center;
+        text-align: start;
         gap:1rem;
+        padding: 10px;
         
         /* background-size: 40px; */
         
         /* position: relative; */
         /* top: 50px; */
     }
-    .bannertwo{
+    .bannerTitle .bannertwo{
        position: relative;
-       right: 340px;
+       text-align: start;
+       display: flex;
+       align-items: start;
+       justify-content: start;
+       right: 400px;
        width: 340px;
        
     
 
+    }
+    .bannerthree{
+        position: relative;
+        right: 160px;
+    
     }
 
     header{
