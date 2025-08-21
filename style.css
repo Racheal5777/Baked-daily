@@ -539,7 +539,7 @@ header{
     }
     .bannertwo{
        position: relative;
-       right: 370px;
+       right: 340px;
        width: 340px;
        
     
@@ -553,6 +553,7 @@ header{
         /* padding: 20px; */
         background-size: 350px;
         background-position: bottom ;
+        max-width: max-content;
         max-height: 95vh;
 
 
