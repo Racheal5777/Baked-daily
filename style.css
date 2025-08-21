@@ -59,7 +59,6 @@ header{
 
 .head{
     background-color: rgb(244 224 198);
-    width: ;
     height: 110vh;
 
 }
@@ -71,15 +70,13 @@ header{
     font-family: playfair display ;
 }
 .bannertwo{
-    display: flex;
-    justify-content: center;
     /* align-items: center; */
     font-size: 16px;
     color: #000;
     line-height: 1.6;
     text-align: center;
     max-width: 500px;
-    /* padding: 5px; */
+    /* padding: 10px; */
     /* position: relative; */
     margin-left: 410px;
       font-family: playfair display ;
@@ -526,7 +523,7 @@ header{
     font-family:  playfair display;
     
 }
-@media (max-width:896px){
+@media(min-width:320px) and (max-width:896px){
     .inner-nav{
         display: none;  
         flex-direction: ;
@@ -557,7 +554,7 @@ header{
     }
     header{
         /* max-width: 100%; */
-        overflow: hidden;
+        /* overflow: hidden; */
 
         /* padding: 20px; */
         background-size: 350px;
