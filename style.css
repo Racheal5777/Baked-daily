@@ -36,6 +36,12 @@ header{
     align-items: center;
     font-family: playfair display;
 }
+.hamburger{
+    display: none;
+}
+#toggle{
+    display: none;
+}
 .genLayout{
     max-width: 1250px;
     margin: auto;
@@ -48,7 +54,11 @@ header{
 .nav-center{
     display: flex;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24rem;
     text-decoration: none;
+    text-align: center;
 }
 .nav-center a {
     text-decoration: none;
@@ -220,8 +230,6 @@ header{
     left: 90px;
     font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    /* -webkit-box-orient: vertical; */
     overflow: hidden;
     font-family: playfair display ;
 }
@@ -239,7 +247,6 @@ header{
     font-family:  playfair display;
 }
 .custom img{
-    padding: ;
     margin-left: 40px;
     width: 200px;
     margin: 3px;
@@ -253,14 +260,12 @@ header{
     text-align: center;
 }
 .cakes4 p{
-    font-size: 0.;
+    font-size: 0.9em;
     max-width: 200px;
     color: #fff;
 
 }
-.cake-3 p{
 
-}
 .cake-3{
     font-size: 36px;
     white-space: nowrap;
@@ -299,15 +304,6 @@ header{
     font-weight: bold;
     margin-left: 40px;
 }
-.cake{
-    /* margin-bottom: 11px; *5
-    /* height: 60vh; */
-    
-}
-
-    
-
-
 .one{
     display: flex;
     justify-content: center;
@@ -521,12 +517,60 @@ header{
     font-family:  playfair display;
     
 }
+.navburger{
+    display: flex;
+    /* gap: 2rem; */
+}
 @media(min-width:320px) and (max-width:896px){
     .inner-nav{
-        display: none;  
-        flex-direction: ;
-        gap: 12px
+        width: calc(100% - 40px);
+        gap: 12px;
+        text-decoration: none;
         
+    }
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .navburger{
+        position: absolute;
+        width: 85%;
+        display: block;
+        padding: 1.4rem 1rem;
+        top: 3rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #0a0701;
+        opacity: 0.8;
+        border-bottom: 4px solid #fff;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77. 0.2, 0.05, 1);
+        text-decoration: none;
+
+
+    }
+    .nav-right{
+        color: #fff;
+        margin-left: 7rem;
+        background-color: black;
+    }
+        
+    .nav-center{
+        flex-direction: column;
+        margin-left: 10rem;
+        
+    }
+    .nav-center  a{
+         color: #fff; 
+        padding-bottom: 5px;
+        border-bottom: 2px solid #fff;
+        text-decoration: none;
+    } 
+
+    #toggle:checked + .navburger{
+        display: block;
+        transform: none;
+        text-decoration: none;
     }
     .bannerTitle{
         text-align: start;
